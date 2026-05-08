@@ -24,15 +24,30 @@ def get_users():
 
 # POST new user
 @app.route('/users', methods=['POST'])
+@app.route('/users', methods=['POST'])
 def add_user():
     request_data = request.json
+
+    if not request_data:
+        return jsonify({
+            "error": "JSON body is required"
+        }), 400
+
+    if "name" not in request_data:
+        return jsonify({
+            "error": "name is required"
+        }), 400
+
+    if not request_data["name"].strip():
+        return jsonify({
+            "error": "name cannot be empty"
+        }), 400
 
     user = User(
         name=request_data["name"]
     )
 
     db.session.add(user)
-
     db.session.commit()
 
     return jsonify(
