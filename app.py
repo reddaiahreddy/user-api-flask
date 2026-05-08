@@ -1,3 +1,4 @@
+from models import User
 from flask import Flask, jsonify, request
 from database import db
 
@@ -26,4 +27,7 @@ def add_user():
     return jsonify(new_user), 201
 
 if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
+        
     app.run(debug=True)
