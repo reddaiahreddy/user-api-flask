@@ -20,8 +20,69 @@ pip install flask
 python app.py
 
 
-## Future Improvements (Week 2)
+# Future Improvements (Week 2 planned)
 - Add database (SQLite/PostgreSQL)
 - Add input validation
 - Improve project structure
 - Add error handling
+
+Week 2
+# Week 2 Improvements
+
+## Database Integration
+- SQLite database added
+- SQLAlchemy ORM configured
+- Persistent data storage
+
+## Data Modeling
+- User model created
+- Database schema initialized
+
+## API Quality
+- Input validation
+- Error handling
+- Proper HTTP status codes
+
+---
+
+# Current Architecture
+
+```text
+Client
+ ↓
+Flask API
+ ↓
+SQLAlchemy ORM
+ ↓
+SQLite Database
+```
+
+---
+
+# Tech Stack
+
+- Python
+- Flask
+- SQLite
+- SQLAlchemy
+- Git
+- GitHub
+
+---
+
+# How to Run
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
+# Week 3 Planned Improvements
+
+- Update user API (PUT)
+- Delete user API (DELETE)
+- Project folder restructuring
+- Service layer
+- Cleaner architecture
