@@ -86,3 +86,15 @@ python app.py
 - Project folder restructuring
 - Service layer
 - Cleaner architecture
+
+# Week 3 Improvements
+
+## CRUD Completion
+- PUT /users/<id>
+- DELETE /users/<id>
+
+## Architecture Improvements
+- Flask Blueprints
+- Modular route structure
+- Service layer introduced
+- Separation of concerns
