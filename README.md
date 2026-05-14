@@ -1,4 +1,4 @@
-# Flask User API (Week 1 Project)
+# Flask User API (Week 1)
 
 ## Overview
 This is a simple REST API built using Flask. It demonstrates basic backend concepts such as routing, HTTP methods, and JSON handling.
