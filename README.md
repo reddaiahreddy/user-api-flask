@@ -98,3 +98,17 @@ python app.py
 - Modular route structure
 - Service layer introduced
 - Separation of concerns
+
+# Week 4 Improvements
+
+## Containerization
+- Dockerfile created
+- Dependency packaging
+- Port mapping
+- Container networking
+
+## Production Runtime
+- Detached containers
+- Named containers
+- Environment variables
+- Container debugging
